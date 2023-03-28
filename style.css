@@ -1,0 +1,585 @@
+/* body {
+    font-family: 'Noto Serif Display', serif;
+}
+
+p {
+    font-family: 'Urbanist', sans-serif;
+    
+} */
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif Display', serif;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    /* To create a transition effect,
+        you must specify two things:
+            - the CSS property you want to add an effect to;
+            - the duration of the effect; */
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    /* The scrolling box scrolls in a smooth fashion using a user-agent-defined timing function over a user-agent-defined period of time. */
+    scroll-behavior: smooth;
+    /*  */
+    scroll-padding-top: 6rem;
+    /*  */
+    overflow-x: hidden;
+}
+
+/* HEADER SECTION STARTS HERE
+Header is everything in the navbar */          
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+}
+
+/* The properties of the logo */
+header .logo {
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+}
+
+/* The properties of the dot in the logo */
+header .logo span {
+    color: #fe7186;
+}
+
+/* The properties of the links in the navigation bar */
+header .navbar a {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0 1.5rem;
+    color: rgb(111, 110, 110);
+}
+
+header .navbar a:hover {
+    color: #fe7186;
+}
+
+/* The properties of the icons in the navigation bar */
+header .icons a {
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+    /* padding: 1rem 0;  */
+}
+
+header .icons a:hover {
+    color: #fe7186;
+}
+
+/* The properties for the checkbox */
+header #drop-down-menu {
+    display: none;
+}
+
+/* The properties for the drop-down menu */
+header .fa-bars {
+    font-size: 2.8rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0,0,0,0.5);
+    display: none;
+    margin: 0.8rem;
+}
+/* HOME SECTION STARTS HERE 
+Put the content in a section for easier editinig */
+section {
+    padding: 2rem 9%;
+}
+
+/* The properties of the home page */
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(./images-and-videos/homepageBackground.jpg);
+    background-size: cover; 
+    background-position: center;
+}
+
+/* The properties of content in the home page */
+.home .content { 
+    max-width: 50rem;
+}
+
+/* The properties of the heading (Korean Cosmetics) in the home page */
+.home .content h3 {
+    font-size: 3.8rem;
+    color: #fe7186; 
+    margin-top: 5rem;
+}
+
+/* The properties of the subheading (Made With Love) in the home page */
+.home .content span {
+    font-size: 2.8rem;
+    color: #333;
+    font-family: 'Urbanist', sans-serif;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+/* The properties of the paragraph in the home page */
+.home .content p {
+    font-size: 1.8rem;
+    color: rgb(111, 110, 110); 
+    font-family: 'Urbanist', sans-serif;
+    padding: 1rem 0;
+    margin: 0rem 6.5rem 0rem 0; 
+    line-height: 1.5;
+}
+
+/* ABOUT SECTION STARTS HERE 
+Heading and Us part in the heading: */
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(209, 103, 121, 0.17); 
+}
+
+/* About part in the heading  */
+.heading span {
+    color: #fe7186;
+}
+
+/* Shop Now and Learn More buttons */
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.9rem;
+}
+
+.button:hover {
+    background: #fe7186;
+}
+
+/* Properties of the whole content in the About page */
+.about .about-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+/* Properties of the video-container */
+.about .about-content .video-container {
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+/* Properties of the video - to have a border, a box-shadow etc */
+.about .about-content .video-container video{
+    width: 100%;
+    border: 1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.5);
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Properties of the heading in the video container */
+.about .about-content .video-container h3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: #fff;
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+/* The "Why Choose Us?" content */
+.about .about-content .content {
+    flex: 1 1 40rem;
+}
+
+/* Properties of the Why Choose Us? heading */
+.about .about-content .content h3 {
+    font-size: 3rem;
+    color: #333;
+}
+
+/* Properties of the paragraph */
+.about .about-content .content p {
+    font-size: 1.5rem;
+    color: rgb(111, 110, 110);
+    padding: 5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+    font-family: 'Urbanist', sans-serif;
+    padding: 1rem 0;
+    margin: 0rem 6.5rem 0rem 0;
+    line-height: 1.5;
+}
+
+/* ICONS SECTION STARTS HERE
+Properties of the icons' container */
+.icons-container {
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/* Properties of the icons in the container */
+.icons-container .photo-icons {
+    background: #fff;
+    border: .1rem solid rgba(0,0,0,0.1);
+    padding: 2rem;
+    display: flex;
+    margin: auto;
+}
+
+/* Properties of the icon images */
+.icons-container .photo-icons img {
+    height: 5rem;
+    margin-right: 2rem;
+}
+
+/* Properties of the headings in the icons' containers */
+.icons-container .photo-icons h3 {
+    color: #333;
+    padding-bottom: .5rem;
+    font-size: 1.7rem;
+}
+
+/* Properties of the info under the headings in the icons' containers */
+.icons-container .photo-icons span {
+    color: #555;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Urbanist', sans-serif;
+}
+
+/* PRODUCTS SECTION starts here
+Properties of the frame of the containers for the products */
+.products .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+/* Properties  of the conatiner of each product */
+.products .product-container .product-box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,0.1);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,0.1);
+    position: relative;
+    
+}
+
+/* Properties of the discount text in the containers */
+.products .product-container .product-box .discount{
+    position: absolute;
+    top: 1rem;
+    left: 1.2rem;
+    padding: .7rem 1rem;
+    font-size: 2.1rem;
+    color: white;
+    background: red;
+    font-family: 'Urbanist', sans-serif; 
+    font-weight: bold;
+    z-index: 1;
+    border-radius: .5rem;
+}
+
+/* Properties of the class image that all the images have */
+.products .product-container .product-box .image{
+    position: relative;
+    text-align: center;
+    padding: 6rem 0;
+    overflow: hidden;
+    margin: 3rem;
+}
+
+/* Properties of the images */
+.products .product-container .product-box .image img{
+    height: 25rem;
+}
+
+/* Properties of the images for when you hover on them - it creates the zoom effect */
+.products .product-container .product-box:hover .image img{
+    transform: scale(1.1);
+}
+
+/* Properties od the icons that each image has underneath */
+.products .product-container .product-box .image .icons{
+    position: absolute;
+    /* so that the icons won't be visible unless we hover on the image */
+    bottom: -7rem;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+
+/* Properties of the icons for when we hover on the product's box */
+.products .product-container .product-box:hover .image .icons{
+    /* so that the icons may uppear when we hover on the image */
+    bottom: 0;
+}
+
+/* Properties of the links in the icons' class for when you hover on the product's box */
+.products .product-container .product-box:hover .image .icons a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 50%;
+    background: #fe7186;
+    color: #fff;
+}
+
+/* Properties of the links for when you hover on them */
+.products .product-container .product-box .image .icons a:hover{
+    background: #333;
+}
+
+/* Properties of the cart button that shows up when you hover on the product box */
+.products .product-container .product-box:hover .image .icons .cart-btn{
+    border-left: .1rem solid #fff7;
+    border-right: .1rem solid #fff7;
+    width: 100%;
+}
+
+/* Properties of the content under the photo of the product - name and price */
+.products .product-container .product-box .content {
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Properties of the name of the products */
+.products .product-container .product-box .content h3 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Properties of the updated price of the products - after the discount */
+.products .product-container .product-box .content .price {
+    font-size: 2.5rem;
+    color:#fe7186;
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+/* Properties of the old price of the products - before the discount */
+.products .product-container .product-box .content .price span{
+    font-size: 1.5rem;
+    color:#999;
+    padding-top: 1rem;
+    text-decoration: line-through;
+}
+/* Product section ends here */
+
+
+/* REVIEW SECTION starts here 
+Properties of the review containers */
+.review .review-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+/* Properties of the review containers' boxes */
+.review .review-container .review-box {
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,0.1);
+    border-radius: .5rem;
+    padding: 3rem 2rem;
+    position: relative;
+    border: 0.2rem solid rgba(0,0,0,0.2);
+}
+
+/* Properties of the quotes */
+.review .review-container .review-box .fa-quote-right {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 6rem;
+    color: rgb(229, 227, 227);
+}
+
+/* Properties of the stars that the user gave for feedback */
+.review .review-container .review-box .stars i {
+    color: #fe7186;
+    font-size: 2rem;
+}
+
+/* Properties of the feedback of the customer */
+.review .review-container .review-box p {
+    font-weight: bolder;
+    color: #999;
+    font-size: 1.5rem;
+    font-family: 'Urbanist', sans-serif;
+    padding-top: 2rem;
+}
+
+/* Properties of the class user */
+.review .review-container .review-box .user {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+/* Properties of the user's image */
+.review .review-container .review-box .user img {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+/* Properties of the user's name */
+.review .review-container .review-box .user h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Properties of "Happy customer" under the user's name */
+.review .review-container .review-box .user span {
+    font-size: 1.5rem;
+    color: #999;
+    font-weight: bolder;
+}
+/* Review section ends here */
+
+
+/* CONTACT SECTION starts here
+Properties of the contact's container  */
+.contact .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+/* Properties of the form */
+.contact .contact-container form {
+    flex: 1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,0.3);
+    border: .1rem solid rgba(0,0,0,0.1);
+    background: #fff;
+    border-radius: .5rem;
+}
+
+/* Properties of the class box */
+.contact .contact-container form .box {
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    font-weight: bold;
+    text-transform: none;
+    border: .2rem solid rgba(0,0,0,0.3);
+    border-radius: .5rem;
+    margin: .7rem 0;
+    width: 100%;
+}
+
+/* Properties of the class box that wraps - to change the color of the border once you start filling the form */
+.contact .contact-container form .box:focus {
+    border-color: #fe7186;
+}
+
+/* Properties of the textarea */
+.contact .contact-container form textarea {
+    height: 15rem;
+    resize: none;
+
+}
+/* Contact section ends here */
+
+
+/* MEDIA QUERIES
+https: //gist.github.com/EmranAhmed/8044351 */
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px) {
+    
+    html {
+        font-size: 55%;
+        }
+
+        header {
+            padding: 2rem;
+        }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+    header .fa-bars {
+        display: block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0,0,0,0.1);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+        /* Properties for the drop-down menu */
+        header #drop-down-menu:checked~.navbar {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: .1rem solid rgba(0,0,0,0.1);
+        display: block;
+    }
+
+    .home .content h3 {
+        font-size: 5rem;
+    }
+
+    .home .content span {
+        font-size: 2.5rem;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+
+    html {
+        font-size: 50%;
+    }
+}

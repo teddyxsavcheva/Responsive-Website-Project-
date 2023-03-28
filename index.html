@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Korean Comsetics Website Design </title>
+
+    <!-- font link of Noto Serif Display and Urbanist  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@1,200&family=Urbanist:wght@200;300&display=swap"
+        rel="stylesheet">
+
+        <!-- custom CSS file link for external CSS -->
+        <link rel="stylesheet" href="./style.css">
+
+        <!-- Font Awesome is the Internet's icon library and toolkit. Cdn link taken from cdnjs.com -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- header section starts -->
+    <header>
+        <input type="checkbox" name="" id="drop-down-menu">
+        <label for="drop-down-menu" class="fas fa-bars"></label>
+        
+        <a href="#" class="logo">KoCosmetics<span>.</span></a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#products">products</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user"></a>
+        </div>
+    </header>
+    <!-- header section ends -->
+
+    <!-- HOME SECTION starts here -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Korean cosmetics</h3>
+            <span>Made with love</span>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam assumenda aliquid perferendis id dolorem modi ipsum et optio.</p>
+            <!-- button, used in main.js -->
+            <button class="button" id="shopNow">shop now</button>
+        
+            <!-- for the clock -->
+            <!-- <div id="txt"></div> -->
+        </div>
+    </section>
+    <!-- home section ends here -->
+    
+    <!-- ABOUT SECTION starts here -->
+    <section class="about" id="about">
+        <h1 class="heading"> <span>about </span> us </h1>
+        <div class="about-content">
+            <div class="video-container">
+                <video src="./images-and-videos/videoforAbout.mp4" loop autoplay muted></video>
+                <h3>only the best for you</h3>
+            </div>
+
+            <div class="content">
+                <h3>why choose us?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nostrum, vero fugit eum ullam dolorem harum a voluptas? Laudantium officiis eos consequatur dicta a quibusdam sunt esse voluptatem accusantium fugit!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit explicabo maxime sequi ullam quasi doloremque consequatur magnam. Et, adipisci sequi.</p>
+                <!-- button, used in main.js -->
+                <button class="button" id="learnMore">learn more</button>
+            </div>
+        </div>
+    </section>
+    <!-- about section ends here -->
+
+    <!-- ICONS SECTION starts here -->
+    <section class="icons-container">
+        
+        <div class="photo-icons">
+            <img src="./images-and-videos/icon-1.png" alt="">
+            <div class="info">
+                <h3>free delivery</h3>
+                <span>on all orders over 20$</span>
+            </div>
+        </div>
+
+        <div class="photo-icons">
+            <img src="./images-and-videos/icon-2.png" alt="">
+            <div class="info">
+                <h3>open and review</h3>
+                <span>free of charge returns</span>
+            </div>
+        </div>
+
+        <div class="photo-icons">
+            <img src="./images-and-videos/icon-3.png" alt="">
+            <div class="info">
+                <h3>gift wrap</h3>
+                <span>for your special occasion</span>
+            </div>
+        </div>
+
+        <div class="photo-icons">
+            <img src="./images-and-videos/icon-4.png" alt="">
+            <div class="info">
+                <h3>secure prepayment</h3>
+                <span>or payment upon delivery</span>
+            </div>
+        </div>
+    
+    </section>
+    <!-- icons section ends here -->
+
+    <!-- PRODUCTS SECTION starts here -->
+    <section class="products" id="products">
+
+            <!-- That way the heading will have the properties of the About page heading -->
+        <h1 class="heading">latest <span>products</span></h1>
+
+        <div class="product-container">
+            <!-- Properties of product-1 -->
+            <div class="product-box">
+                <span class="discount">-10%</span>
+
+                <div class="image">
+                    <img src="./images-and-videos/product-1.jpg" alt="">
+
+                    <div class="icons">
+                        <a href="#product" class="fas fa-heart"></a>
+                        <a href="#product" class="cart-btn">add to cart</a>
+                        <a href="#product" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>name of product 1</h3>
+                    <div class="price">$12.99 <span>$15.99</span> </div>
+                </div>
+            </div>
+            <!-- Properties of product-2 -->
+            <div class="product-box">
+                <span class="discount">-15%</span>
+
+                <div class="image">
+                    <img src="./images-and-videos/product-2.jpg" alt="">
+
+                    <div class="icons">
+                        <a href="#product" class="fas fa-heart"></a>
+                        <a href="#product" class="cart-btn">add to cart</a>
+                        <a href="#product" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>name of product 2</h3>
+                    <div class="price">$12.99 <span>$15.99</span> </div>
+                </div>
+            </div>
+            <!-- Properties of product-3 -->
+            <div class="product-box">
+                <span class="discount">-5%</span>
+
+                <div class="image">
+                    <img src="./images-and-videos/product-3.jpg" alt="">
+
+                    <div class="icons">
+                        <a href="#product" class="fas fa-heart"></a>
+                        <a href="#product" class="cart-btn">add to cart</a>
+                        <a href="#product" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>name of product 3</h3>
+                    <div class="price">$12.99 <span>$15.99</span> </div>
+                </div>
+            </div>
+            <!-- Properties of product-4 -->
+            <div class="product-box">
+                <span class="discount">-5%</span>
+
+                <div class="image">
+                    <img src="./images-and-videos/product-4.jpg" alt="">
+
+                    <div class="icons">
+                        <a href="#product" class="fas fa-heart"></a>
+                        <a href="#product" class="cart-btn">add to cart</a>
+                        <a href="#product" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>name of product 4</h3>
+                    <div class="price">$12.99 <span>$15.99</span> </div>
+                </div>
+            </div>
+            <!-- Properties of product-5 -->
+            <div class="product-box">
+                <span class="discount">-5%</span>
+
+                <div class="image">
+                    <img src="./images-and-videos/product-5.jpg" alt="">
+
+                    <div class="icons">
+                        <a href="#product" class="fas fa-heart"></a>
+                        <a href="#product" class="cart-btn">add to cart</a>
+                        <a href="#product" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>name of product 5</h3>
+                    <div class="price">$12.99 <span>$15.99</span> </div>
+                </div>
+            </div>
+            <!-- Properties of product-6 -->
+            <div class="product-box">
+                <span class="discount">-5%</span>
+
+                <div class="image">
+                    <img src="./images-and-videos/product-6.jpg" alt="">
+
+                    <div class="icons">
+                        <a href="#product" class="fas fa-heart"></a>
+                        <a href="#product" class="cart-btn">add to cart</a>
+                        <a href="#product" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>name of product 6</h3>
+                    <div class="price">$12.99 <span>$15.99</span> </div>
+                </div>
+            </div>
+            <!-- Properties of product-7 -->
+            <div class="product-box">
+                <span class="discount">-5%</span>
+
+                <div class="image">
+                    <img src="./images-and-videos/product-7.jpg" alt="">
+
+                    <div class="icons">
+                        <a href="#product" class="fas fa-heart"></a>
+                        <a href="#product" class="cart-btn">add to cart</a>
+                        <a href="#product" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>name of product 7</h3>
+                    <div class="price">$12.99 <span>$15.99</span> </div>
+                </div>
+            </div>
+            <!-- Properties of product-8 -->
+            <div class="product-box">
+                <span class="discount">-5%</span>
+
+                <div class="image">
+                    <img src="./images-and-videos/product-8.jpg" alt="">
+
+                    <div class="icons">
+                        <a href="#product" class="fas fa-heart"></a>
+                        <a href="#product" class="cart-btn">add to cart</a>
+                        <a href="#product" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>name of product 8</h3>
+                    <div class="price">$12.99 <span>$15.99</span> </div>
+                </div>
+            </div>
+            <!-- Properties of product-9 -->
+            <div class="product-box">
+                <span class="discount">-5%</span>
+
+                <div class="image">
+                    <img src="./images-and-videos/product-9.jpg" alt="">
+
+                    <div class="icons">
+                        <a href="#product" class="fas fa-heart"></a>
+                        <a href="#product" class="cart-btn">add to cart</a>
+                        <a href="#product" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>name of product 9</h3>
+                    <div class="price">$12.99 <span>$15.99</span> </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Product section ends here -->
+
+    <!-- REVIEW SECTION starts here  -->
+    <section class="review" id="review">
+        <h1 class="heading"> customer's <span>review</span></h1>
+
+        <div class="review-container">
+            <!-- Customer 1 -->
+            <div class="review-box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae at sapiente quibusdam consectetur architecto cum velit aliquam, assumenda animi quo deleniti inventore unde obcaecati magnam nobis non minima? Dolor, alias.</p>
+                <div class="user">
+                    <img src="./images-and-videos/girl-with-clear-skin.jpg" alt="">
+                    <div class="user-info">
+                        <h3>name of the girl</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+            <!-- Customer 2 -->
+            <div class="review-box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae at sapiente quibusdam consectetur architecto cum velit aliquam, assumenda animi quo deleniti inventore unde obcaecati magnam nobis non minima? Dolor, alias.</p>
+                <div class="user">
+                    <img src="./images-and-videos/boy-with-face-mask.jpg" alt="">
+                    <div class="user-info">
+                        <h3>name of the boy</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+            <!-- Customer 3 -->
+            <div class="review-box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae at sapiente quibusdam consectetur architecto cum velit aliquam, assumenda animi quo deleniti inventore unde obcaecati magnam nobis non minima? Dolor, alias.</p>
+                <div class="user">
+                    <img src="./images-and-videos/girl-with-eye-patches.jpg" alt="">
+                    <div class="user-info">
+                        <h3>name of the girl</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+
+        </div>
+    </section>
+    <!-- Review section ends here  -->
+
+    <!-- CONTACT SECTION starts here -->
+    <section class="contact" id="contact">
+        <h1 class="heading"> <span>contact </span> us</h1>
+
+        <div class="contact-container">
+
+            <form action="" id="form">
+                <input type="text" placeholder="Name" class="box">
+                <input type="email" placeholder="e-mail" class="box">
+                <input type="number" placeholder="Number" class="box">
+                
+                <textarea name="" class="box" placeholder="Message" id="" cols="30" rows="10"></textarea>
+
+                <input type="submit" value="send message" class="button"> 
+                
+            </form>
+
+        </div>
+    </section>
+    <!-- Contact section ends here -->
+
+    <!-- custom js file link -->
+    <script src="./main.js"></script>
+</body>
+</html>
